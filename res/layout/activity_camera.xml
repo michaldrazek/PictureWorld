@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity" >
+        
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+	</FrameLayout>
+
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="10"
+		    android:background="@color/alphablack"
+		    android:baselineAligned="true"
+		    android:orientation="horizontal" >
+
+			<RelativeLayout
+			    android:id="@+id/exposureRel"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1" >
+
+				<ImageView
+				    android:id="@+id/exposureIV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:src="@drawable/exposure_compensation" />
+
+			</RelativeLayout>
+
+			<RelativeLayout
+			    android:id="@+id/colorRel"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1" >
+
+				<ImageView
+				    android:id="@+id/colorIV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:layout_marginTop="5dp"
+				    android:src="@drawable/color_effect" />
+
+			</RelativeLayout>
+
+			<RelativeLayout
+			    android:id="@+id/resRel"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1" >
+
+				<ImageView
+				    android:id="@+id/resIV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:layout_marginTop="5dp"
+				    android:src="@drawable/resolution" />
+
+			</RelativeLayout>
+
+			<RelativeLayout
+			    android:id="@+id/whiteRel"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1" >
+
+				<ImageView
+				    android:id="@+id/whiteIV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:layout_marginTop="5dp"
+				    android:src="@drawable/white_balance" />
+
+			</RelativeLayout>
+
+			<RelativeLayout
+			    android:id="@+id/flashRel"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1" >
+
+				<ImageView
+				    android:id="@+id/flashIV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:layout_marginTop="5dp"
+				    android:src="@drawable/flash_mode" />
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="3"
+		    android:baselineAligned="false"
+		    android:orientation="vertical" >
+
+            </LinearLayout>
+
+		<LinearLayout
+		    android:background="@color/alphablack"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="10"
+		    android:baselineAligned="false"
+		    android:gravity="bottom"
+		    android:orientation="horizontal" >
+	
+	            <RelativeLayout
+	                android:id="@+id/relConfirm"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1" >
+
+	                <ImageView
+	                    android:id="@+id/conIV"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentTop="true"
+	                    android:layout_centerHorizontal="true"
+	                    android:src="@drawable/confirm_white" />
+
+	            </RelativeLayout>
+
+	            <RelativeLayout
+	                android:id="@+id/relPic"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1" >
+
+	                <ImageView
+	                    android:id="@+id/camIV"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentTop="true"
+	                    android:layout_centerHorizontal="true"
+	                    android:src="@drawable/camera_white" />
+
+	            </RelativeLayout>
+	
+	            <RelativeLayout
+	                android:id="@+id/relAbort"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1" >
+
+	                <ImageView
+	                    android:id="@+id/abIV"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentTop="true"
+	                    android:layout_centerHorizontal="true"
+	                    android:src="@drawable/abort_white" />
+
+	            </RelativeLayout>
+	        </LinearLayout>
+	    </LinearLayout>
+    
+</RelativeLayout>

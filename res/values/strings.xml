@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PictureWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_galleries">GalleriesActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_kolaz">KolazActivity</string>
+    <string name="title_activity_picker">PickerActivity</string>
+    <string name="title_activity_picker_camera">PickerCameraActivity</string>
+    <string name="title_activity_file_manager">FileManagerActivity</string>
+    <string name="title_activity_editor">EditorActivity</string>
+    <string name="title_activity_text_picker">TextPickerActivity</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_effects">EffectsActivity</string>
+    <string name="title_activity_online_browser">OnlineBrowserActivity</string>
+    <string name="loadedImage">loaded_image</string>
+
+</resources>

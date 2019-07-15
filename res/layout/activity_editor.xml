@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity" >
+
+    <SeekBar
+        android:id="@+id/brightnessBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="510"
+        android:progress="255"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/contrastBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brightnessBar"
+        android:max="510"
+        android:progress="255"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/saturationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contrastBar"
+        android:max="200"
+        android:progress="100"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/thisPictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/saturationBar"
+        android:layout_marginBottom="55dp" >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/editorSaveIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/confirm" />
+
+        <ImageView
+            android:id="@+id/sentToServerIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/web" />
+
+        <ImageView
+            android:id="@+id/editorShareIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/editorColorEffects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/addeffect" />
+
+        <ImageView
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/addtext" />
+
+    </LinearLayout>
+
+</RelativeLayout>

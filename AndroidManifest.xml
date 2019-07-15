@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pictureworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GalleriesActivity"
+            android:label="@string/title_activity_galleries"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".KolazActivity"
+            android:label="@string/title_activity_kolaz"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PickerActivity"
+            android:label="@string/title_activity_picker"
+            android:parentActivityName=".KolazActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.KolazActivity" />
+        </activity>
+        <activity
+            android:name=".PickerCameraActivity"
+            android:label="@string/title_activity_picker_camera"
+            android:parentActivityName=".PickerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.PickerActivity" />
+        </activity>
+        <activity
+            android:name=".FileManagerActivity"
+            android:label="@string/title_activity_file_manager"
+            android:parentActivityName=".GalleriesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.GalleriesActivity" />
+        </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:parentActivityName=".FileManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.FileManagerActivity" />
+        </activity>
+        <activity
+            android:name=".TextPickerActivity"
+            android:label="@string/title_activity_text_picker" >
+        </activity>     
+        <activity
+            android:name=".EffectsActivity"
+            android:label="@string/title_activity_effects"
+            android:parentActivityName=".PickerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.PickerActivity" />
+        </activity>
+        <activity
+            android:name=".OnlineBrowserActivity"
+            android:label="@string/title_activity_online_browser"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pictureworld.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

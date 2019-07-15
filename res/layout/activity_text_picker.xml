@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context=".TextPickerActivity" >
+
+    <RelativeLayout
+        android:id="@+id/text_preview_layout"
+        style="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_preview_layout"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/lorem_ipsum" />
+
+    <RelativeLayout
+        android:id="@+id/fontLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_text"
+        android:layout_marginBottom="@dimen/swiggitywooty" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/font_layout"
+                style="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/textPickerConfirmIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/confirm" />
+
+        <ImageView
+            android:id="@+id/textPickerStrokeIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/stroke" />
+
+        <ImageView
+            android:id="@+id/textPickerFillIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/fill" />
+
+    </LinearLayout>
+
+</RelativeLayout>

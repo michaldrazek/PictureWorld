@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/mainActivityImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/linear_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainActivityImageView"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_horizontal1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/camIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/camIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="Aparat"
+                    android:textSize="20sp" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_lay2"
+                android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/conIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/conIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="Galerie"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_horizontal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rel_lay3"
+                android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:layout_weight="1"  >
+
+                <ImageView
+                    android:id="@+id/abIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/collage" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="Kolaż"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_lay4"
+                android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:layout_weight="1"  >
+
+                <ImageView
+                    android:id="@+id/exposureIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/web" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exposureIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sieć"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+	  <ProgressBar
+	      android:id="@+id/mainActivityProgressBar"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_centerHorizontal="true"
+	      android:visibility="invisible" />
+
+	  <ImageView
+	      android:id="@+id/mainRightIV"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentRight="true"
+	      android:layout_below="@+id/mainActivityProgressBar"
+	      android:src="@drawable/right" />
+
+	  <ImageView
+	      android:id="@+id/mainLeftIV"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentLeft="true"
+	      android:layout_below="@+id/mainActivityProgressBar"
+	      android:src="@drawable/left" />
+    
+</RelativeLayout>
